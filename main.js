@@ -18,17 +18,17 @@ function clickElement(){
             navBar.style.transition = 'transition: all 0.2s ease-in-out';
         }
     });
-    document.getElementById("navbar").addEventListener("click", ()=> {
-        // alert("Clicked");
+    // document.getElementById("navbar").addEventListener("click", ()=> {
+    //     // alert("Clicked");
     
 
-        // navBar.classList.toggle('nav-toggle');
+    //     // navBar.classList.toggle('nav-toggle');
     
-        if(navBar.style.left == '0%'){
-            navBar.style.left = '-100%';
-            navBar.style.transition = 'transition: all 0.2s ease-in-out';
-        }
-    });
+    //     if(navBar.style.left == '0%'){
+    //         navBar.style.left = '-100%';
+    //         navBar.style.transition = 'transition: all 0.2s ease-in-out';
+    //     }
+    // });
 }
 function toggleNavbar(){
     var hamburgers = document.getElementById("hamburger");
