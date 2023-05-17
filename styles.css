@@ -7,10 +7,16 @@
 /*  */
 body{
     margin: 0;
+    display: block;
+    background-color: rgb(159, 162, 187);
+    
 }
 header{
-    font-size: 22px;
+    font-size: 23px;
     font-weight: bold;
+}
+#main-wrap{
+    display: block;
 }
 /* HAMBURGER ICON */
 #hamburger{
@@ -19,9 +25,9 @@ header{
     z-index: 2;
     padding: 15px 15px;
     border-radius: 50%;
-    right: 0;
+    right: 10;
     margin: 20px;
-    box-shadow: 0px 0px 5px 1px rgba(43, 47, 69, 0.468);
+    box-shadow: 0px 0px 5px 1px rgba(88, 71, 121, 0.468);
 }
 #hamburger .fa-bars{
     font-size: 30px;
@@ -30,14 +36,14 @@ header{
 /* NAVBAR CSS */
 #navbar{
    background-color: rgb(63, 69, 101);
-   color: white;
+   color: rgb(255, 255, 255);
    text-align: start;
    padding: 20px 0px;
    position: fixed;
-   height: 95%;
+   height: 100%;
    width: 60%;
    overflow-y: scroll;
-   left: 0%;
+   left: -100%;
    transition: all 0.5s ease-in-out;
    box-shadow: 0px 0px 5px 1px rgba(43, 47, 69, 0.468);
 }
@@ -57,7 +63,7 @@ header{
 }
 .nav-link{
     text-decoration: none;
-    color: white;
+    color: rgb(235, 236, 255);
 }
 #navbar ul li:hover{
     background-color: rgb(47, 51, 76);
@@ -69,11 +75,66 @@ header{
     text-align: center;
     font-style: italic;
     padding-top: 20px;
+    color: #ffffff;
     margin: 0px 20px;
     border-top: 1px solid white;
 }
 /* MAIN */
 #main-doc{
-    background-color: aquamarine;
-    padding: 50px 35px;
+    background-color:rgb(159, 162, 187);
+    padding: 50px 20px;
+    display: grid;
+    gap: 25px;
+}
+ul{
+    display: grid;
+    gap: 15px;
+}
+/* SECTION */
+.main-section{
+    background-color: white;
+    padding: 20px 35px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.468);
+}
+#code-box{
+    background-color: rgb(231, 231, 231);
+    padding: 20px 25px;
+    border-radius: 10px;
+}
+footer{
+    background-color: rgb(55, 44, 69);
+    text-align: center;
+    font-style: italic;
+    color: white;
+    padding: 15px;
+    border-top: 1px solid white;
+}
+@media only screen and (min-width: 668px){
+    #main-doc{
+        padding: 50px 60px;
+    }
+    #navbar{
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 968px){
+    #main-doc{
+        padding: 50px 180px;
+        margin-left: 25%;
+    }
+    #hamburger{
+        display: none;
+    }
+    #navbar{
+        width: 25%;
+        left: 0%;
+        height: 95%;
+    }
+    body{
+        display: flex;
+    }
+    footer{
+        margin-left: 25%;
+    }
 }
