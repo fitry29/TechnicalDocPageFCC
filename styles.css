@@ -111,6 +111,7 @@ ul{
     background-color: rgb(231, 231, 231);
     padding: 20px 25px;
     border-radius: 10px;
+    word-wrap: break-word;
 }
 code{
     font-family: 'Courier New', Courier, monospace;
